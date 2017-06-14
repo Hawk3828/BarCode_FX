@@ -10,28 +10,27 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="AnchorPaneScanOut" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barcode_fx.CheckOutPageController">
    <children>
-      <BorderPane fx:id="BorderPaneScanOut" stylesheets="@BarCode_FX.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BorderPane fx:id="BorderPaneScanOut" stylesheets="@BarCode_FX.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
          <center>
-            <AnchorPane fx:id="AnchorPaneScanOut" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="800.0" stylesheets="@BarCode_FX.css">
+            <AnchorPane fx:id="AnchorPaneScanOut" centerShape="false" minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="800.0" prefWidth="1092.0" scaleShape="false" stylesheets="@BarCode_FX.css" BorderPane.alignment="CENTER">
                <children>
-                  <VBox alignment="CENTER" layoutX="160.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="767.0" prefWidth="555.0" spacing="75.0" style="-fx-border-style: solid inside;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <VBox alignment="CENTER" layoutX="160.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="801.0" spacing="50.0" style="-fx-border-style: solid inside;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="25.0">
                      <children>
                         <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="87.0" prefWidth="516.0">
                            <children>
-                              <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="28.0" prefWidth="427.0" text="Scan Test Request" textAlignment="JUSTIFY" wrapText="true">
+                              <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="28.0" prefWidth="379.0" text="Scan Test Request" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="NEVER">
                                  <VBox.margin>
-                                    <Insets />
+                                    <Insets left="50.0" right="50.0" />
                                  </VBox.margin>
                                  <font>
                                     <Font name="System Bold" size="19.0" />
                                  </font>
                               </Label>
-                              <TextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="375.0">
+                              <TextField fx:id="co_ScanTestRequest" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="375.0">
                                  <VBox.margin>
-                                    <Insets left="25.0" right="75.0" />
+                                    <Insets left="50.0" right="50.0" />
                                  </VBox.margin>
                               </TextField>
                            </children>
@@ -41,17 +40,17 @@
                         </VBox>
                         <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="87.0" prefWidth="516.0">
                            <children>
-                              <Label alignment="TOP_LEFT" prefHeight="27.0" prefWidth="450.0" text="Scan Operator Shift">
+                              <Label alignment="TOP_LEFT" prefHeight="27.0" prefWidth="373.0" text="Scan Operator Shift">
                                  <VBox.margin>
-                                    <Insets left="25.0" />
+                                    <Insets left="50.0" right="50.0" />
                                  </VBox.margin>
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="375.0">
+                              <TextField fx:id="co_ScanOperatorShift" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="375.0">
                                  <VBox.margin>
-                                    <Insets left="25.0" right="75.0" />
+                                    <Insets left="50.0" right="50.0" />
                                  </VBox.margin>
                               </TextField>
                            </children>
@@ -59,19 +58,19 @@
                               <Insets left="25.0" right="25.0" />
                            </VBox.margin>
                         </VBox>
-                        <VBox alignment="CENTER" prefHeight="84.0" prefWidth="516.0">
+                        <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="84.0" prefWidth="516.0">
                            <children>
-                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="447.0" text="Scan Opertator Name" textAlignment="JUSTIFY">
+                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="378.0" text="Scan Opertator Name" textAlignment="JUSTIFY" VBox.vgrow="NEVER">
                                  <VBox.margin>
-                                    <Insets left="25.0" />
+                                    <Insets left="50.0" right="50.0" />
                                  </VBox.margin>
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
                               </Label>
-                              <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="375.0">
+                              <TextField fx:id="co_ScanOperatorName" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="375.0">
                                  <VBox.margin>
-                                    <Insets left="25.0" right="75.0" />
+                                    <Insets left="50.0" right="50.0" />
                                  </VBox.margin>
                               </TextField>
                            </children>
@@ -79,7 +78,7 @@
                               <Insets left="25.0" right="25.0" />
                            </VBox.margin>
                         </VBox>
-                        <Button fx:id="btnCheckOutPrint" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleButtonActionPrint" prefHeight="78.0" prefWidth="423.0" text="Print Test Request" textAlignment="CENTER">
+                        <Button fx:id="btnCheckOutPrint" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleButtonActionPrint" prefHeight="76.0" prefWidth="382.0" text="Enter Test Request" textAlignment="CENTER">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
@@ -89,13 +88,16 @@
                         </Button>
                      </children>
                      <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="DEFAULT" />
                      </cursor>
                   </VBox>
                </children>
                <BorderPane.margin>
-                  <Insets bottom="100.0" left="100.0" right="100.0" top="25.0" />
+                  <Insets />
                </BorderPane.margin>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
             </AnchorPane>
          </center>
          <top>
