@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPaneMain" stylesheets="@BarCode_FX.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barcode_fx.HomePageController">
+   <children>
+      <BorderPane fx:id="BorderPaneScanOut" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" style="-fx-border-style: solid inside;" stylesheets="@BarCode_FX.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" stylesheets="@BarCode_FX.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnScanOut" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="86.0" prefWidth="144.0" text="Scan_Out">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView blendMode="COLOR_BURN" fitHeight="221.0" fitWidth="482.0" preserveRatio="true">
+                     <image>
+                        <Image url="@Husqvarna_Logo1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnScanIn" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="86.0" prefWidth="144.0" stylesheets="@BarCode_FX.css" text="Scan_In" textAlignment="RIGHT">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+      <MenuBar layoutY="-1.0" prefHeight="22.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="fileNewTr" mnemonicParsing="false" onAction="#handleButtonActionNewTR" text="New Test Request" />
+                  <MenuItem fx:id="fileNewSuperMode" mnemonicParsing="false" onAction="#handleButtonActionNewSuperMode" text="Supervisor Mode" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeApp" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="labVersion" alignment="CENTER" layoutX="660.0" layoutY="953.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="47.0" prefWidth="339.0" text="Husqvarna Barcode _FXv1.0.0" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

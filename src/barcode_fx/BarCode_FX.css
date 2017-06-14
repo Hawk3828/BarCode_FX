@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 10, 2017, 7:47:08 AM
+    Author     : H586377
+*/
+
+
+
+#BorderPaneMain {
+     -fx-background-image: url("background.png");     
+}
+
+#gPaneNewTR{
+     -fx-background-image: url("background.png");     
+}
+
+#shift {
+     -fx-background-image: url("background.png");     
+}
+
+#btnScanOut {
+    -fx-background-color: midnightBlue;
+    -fx-text-fill: white;
+    -fx-background-radius: 16px;
+}
+
+#btnScanIn {
+    -fx-background-color: darkblue;
+    -fx-text-fill: white;
+    -fx-background-radius: 16px;
+}
+#btnCheckOutPrint {
+    -fx-background-color: darkblue;
+    -fx-text-fill: white;
+    -fx-background-radius: 16px;
+}
+#btnScanInUnit {
+    -fx-background-color: darkblue;
+    -fx-text-fill: white;
+    -fx-background-radius: 16px;
+}
+
+#btnShiftButton {
+    -fx-background-color: darkblue;
+    -fx-text-fill: white;
+    -fx-background-radius: 16px;
+}
+

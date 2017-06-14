@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane fx:id="shiftForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" stylesheets="@BarCode_FX.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barcode_fx.Shift_FormController">
+   <children>
+      <SplitPane fx:id="shift" dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@BarCode_FX.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="shiftListView" layoutX="-39.0" layoutY="68.0" prefHeight="398.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+          </AnchorPane>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="800.0" stylesheets="@BarCode_FX.css">
+               <children>
+                  <Button fx:id="btnShiftButton" alignment="CENTER" layoutX="419.0" layoutY="742.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="124.0" stylesheets="@BarCode_FX.css" text="ENTER SELECTION" />
+                  <VBox alignment="CENTER" layoutX="58.0" layoutY="11.0" prefHeight="172.0" prefWidth="373.0" spacing="50.0">
+                     <children>
+                        <Label fx:id="lb_shiftLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="11.0" prefHeight="62.0" prefWidth="256.0" text="(SHIFT NAME)" AnchorPane.bottomAnchor="325.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="11.0" />
+                        <Label fx:id="lb_shiftLabelNote" layoutX="172.0" layoutY="141.0" text="Please Make Selection and Click Enter">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextField fx:id="txf_shiftInput" alignment="CENTER" layoutX="170.0" layoutY="374.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0" />
+               </children>
+          </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

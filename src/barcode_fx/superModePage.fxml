@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barcode_fx.SuperModePageController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="250.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="577.0" text="Supervisor Mode" GridPane.columnSpan="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView prefHeight="429.0" prefWidth="220.0" GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <GridPane.margin>
+            <Insets bottom="25.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </ListView>
+      <VBox alignment="CENTER" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="80.0" prefWidth="200.0" text="ADD TEST REQUEST" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="80.0" prefWidth="200.0" text="PUT UP UNIT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="80.0" prefWidth="200.0" text="PUT DOWN UNIT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <HBox spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="108.0" text="PRINT TR" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <HBox.margin>
+                  <Insets left="15.0" top="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="108.0" text="END TEST" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <HBox.margin>
+                  <Insets top="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="closeButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="41.0" prefWidth="92.0" text="EXIT MODE">
+               <HBox.margin>
+                  <Insets left="-105.0" right="-50.0" top="130.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

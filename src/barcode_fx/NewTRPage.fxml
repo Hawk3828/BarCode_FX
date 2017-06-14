@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="mainGridNewTrPage" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="barcode_fx.NewTRPageController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="239.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="160.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="0.0" prefHeight="75.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="400.0" minHeight="10.0" prefHeight="307.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="lb_NewTr" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="467.0" text="Please Scan Unit To Create Test Request" underline="true" GridPane.columnSpan="3">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txf_TR_Entry" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="48.0" minWidth="-Infinity" prefHeight="49.0" prefWidth="385.0" GridPane.columnSpan="3" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="50.0" right="50.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="207.0" prefWidth="206.0" spacing="25.0" GridPane.rowIndex="3">
+         <children>
+            <RadioButton fx:id="rbtn_1stShift" mnemonicParsing="false" text=" 1ST SHIFT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgl_SHIFT" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbtn_2ndtShift" mnemonicParsing="false" text="2ND SHIFT" toggleGroup="$tgl_SHIFT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtn_3rdShift" mnemonicParsing="false" text="3RD SHIFT" toggleGroup="$tgl_SHIFT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtn_AllShift" mnemonicParsing="false" text="ALL SHIFTS" toggleGroup="$tgl_SHIFT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets top="-200.0" />
+         </GridPane.margin>
+      </VBox>
+      <HBox alignment="CENTER" minWidth="-Infinity" prefHeight="43.0" prefWidth="500.0" spacing="100.0" GridPane.columnSpan="3" GridPane.rowIndex="2">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="SELECT SHIFT" textAlignment="CENTER" underline="true" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text=" ENTER TEST HOURS" underline="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="btn_EnterRequest" mnemonicParsing="false" onAction="#handleButtonEnterTR" prefHeight="48.0" prefWidth="161.0" text="ENTER REQUEST" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="325.0" />
+         </GridPane.margin>
+      </Button>
+      <TextField fx:id="txf_TRnotes" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="179.0" prefWidth="318.0" promptText="Add TR Notes Here" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" top="200.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="260.0" spacing="25.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <TextField fx:id="txf_Hours_Entry" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="150.0" stylesheets="@BarCode_FX.css" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <RadioButton fx:id="rbtn_MixedFuel" mnemonicParsing="false" text="MIXED FUEL" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgl_FUEL" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbtn_AspenFuel" mnemonicParsing="false" text="ASPEN FUEL" toggleGroup="$tgl_FUEL" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets top="-200.0" />
+         </GridPane.margin>
+      </VBox>
+   </children>
+</GridPane>
