@@ -70,11 +70,11 @@ public class CheckOutPageController implements Initializable {
          		  	"Operator varchar(255) NOT NULL," +
          		  	"Testdate DATE  NOT NULL," +
          		  	"ScanOut TIME  NOT NULL," + 
-         		  	"ScanIn TIME  NOT NULL DEFAULT 'null'," +
-         		  	"RunTime FLOAT NOT NULL DEFAULT 'null'," +
-         		  	"ActiveHours FLOAT  NOT NULL DEFAULT 'null' ," +
-         		  	"Unit_Issue varchar(255) NOT NULL DEFAULT 'null'," +
-         		  	"Notes varchar(255) NOT NULL DEFAULT 'null'," +
+         		  	"ScanIn TIME , " +
+         		  	"RunTime FLOAT," +
+         		  	"ActiveHours FLOAT ," +
+         		  	"Unit_Issue varchar(255)," +
+         		  	"Notes varchar(255)," +
          		  	"PRIMARY KEY (SCAN)) "+
          		  	"ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ";
          
@@ -98,7 +98,7 @@ public class CheckOutPageController implements Initializable {
     	    
 			preparedstatement.setInt(1, 0);
 			preparedstatement.setString(2, co_ScanOperatorShift.getText());
-			preparedstatement.setString(3, co_ScanOperatorShift.getText());
+			preparedstatement.setString(3, co_ScanOperatorName.getText());
 			preparedstatement.setDate(4,currentScanOutDate);
 			preparedstatement.setTime(5,currentScanOut);
 			

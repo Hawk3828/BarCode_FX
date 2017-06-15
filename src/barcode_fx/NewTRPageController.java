@@ -97,7 +97,7 @@ public class NewTRPageController implements Initializable {
 			preparedstatement.setString(4, selectedFuel.getText());
 			preparedstatement.setString(5 ,txf_TRnotes.getText());
 
-//			preparedstatement.executeUpdate();
+			preparedstatement.executeUpdate();
 			
 			
 			// Creation of Dialog Box
@@ -116,9 +116,9 @@ public class NewTRPageController implements Initializable {
 
 			System.out.println("Test Request Created!");
 
-		} catch (SQLException e) {
+			} catch (SQLException e) {
 			DBUtil.processException(e);
-		}
+			}
 
 	}
 
